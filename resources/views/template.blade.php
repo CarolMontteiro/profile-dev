@@ -8,6 +8,7 @@
     @vite('resources/css/app.css')
     <script defer src="/resources/js/jsapp.js"></script>
     <script src="https://kit.fontawesome.com/8005c041ac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}" media="screen"/>
     <title>CodeZeus</title>
 </head>
 <body>
@@ -27,7 +28,7 @@
                 <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </div>
             <div class="w-1/2 h-auto">
-                <img class="h-300 w-300" src="/image/fotodark.jpeg" alt="">
+                <img class="h-300 w-300" src="{{ asset('image/fotolight.jpeg') }}" alt="">
             </div>
         </div>
     </div>
@@ -56,7 +57,7 @@
     </div>
 </section>
 
-<section id="skill" class="min-h-screen grid place-items-center items-center">
+<section id="skill" class="bg-stone-800 min-h-screen grid place-items-center items-center">
     <div class="container">
         <h2 class="text-3xl font-semibold pb-16">Conhecimentos</h2>
 
@@ -143,9 +144,46 @@
 
 <section id="projects" class="bg-stone-900 min-h-screen grid place-items-center items-center">
     <div class="container">
-        <h2 class="text-white text-3xl font-semibold pb-16">Conhecimentos</h2>
+        <h2 class="text-white text-3xl font-semibold pb-16">Projetos</h2>
 
-        <div class="cards-projects">
+        <div class="cards-projects grid grid-cols-3	items-center gap-10">
+
+            <div class="project-box h-[240px] flex relative overflow-hidden border-2 border-blue-600 rounded-[2rem] group transition-transform transform-gpu">
+                <img src="{{ asset('image/foto1.jpg') }}" class="w-full object-cover ease-in duration-[.5s] transition-transform transform-gpu hover:scale-110" alt="">
+                <div class="project-description flex absolute justify-center items-center flex-col text-center px-3 text-white bottom-0 left-0 w-full h-full bg-gradient-to-t from-cyan-600 to-blue-500/90 ease-in duration-[.5s] transition-transform transform-gpu translate-y-full group-hover:translate-y-0">
+                    <h4 class="text-2xl font-semibold pb-2">Lorem ipsum</h4>
+                    <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="inline-flex justify-center items-center w-10 h-10 bg-white rounded-full"><i class="fa-solid fa-arrow-up-right-from-square text-yellow-600"></i></a>
+                </div>
+            </div>
+
+            <div class="project-box h-[240px] flex relative overflow-hidden border-2 border-blue-600 rounded-[2rem] group transition-transform transform-gpu">
+                <img src="{{ asset('image/foto2.png') }}" class="w-full object-cover ease-in duration-[.5s] transition-transform transform-gpu hover:scale-110" alt="">
+                <div class="project-description flex absolute justify-center items-center flex-col text-center px-3 text-white bottom-0 left-0 w-full h-full bg-gradient-to-t from-cyan-600 to-blue-500/90 ease-in duration-[.5s] transition-transform transform-gpu translate-y-full group-hover:translate-y-0">
+                    <h4 class="text-2xl font-semibold pb-2">Lorem ipsum</h4>
+                    <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="inline-flex justify-center items-center w-10 h-10 bg-white rounded-full"><i class="fa-solid fa-arrow-up-right-from-square text-yellow-600"></i></a>
+                </div>
+            </div>
+
+            <div class="project-box h-[240px] flex relative overflow-hidden border-2 border-blue-600 rounded-[2rem] group transition-transform transform-gpu">
+                <img src="{{ asset('image/foto3.png') }}" class="w-full object-cover ease-in duration-[.5s] transition-transform transform-gpu hover:scale-110" alt="">
+                <div class="project-description flex absolute justify-center items-center flex-col text-center px-3 text-white bottom-0 left-0 w-full h-full bg-gradient-to-t from-cyan-600 to-blue-500/90 ease-in duration-[.5s] transition-transform transform-gpu translate-y-full group-hover:translate-y-0">
+                    <h4 class="text-2xl font-semibold pb-2">Lorem ipsum</h4>
+                    <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="inline-flex justify-center items-center w-10 h-10 bg-white rounded-full"><i class="fa-solid fa-arrow-up-right-from-square text-yellow-600"></i></a>
+                </div>
+            </div>
+
+            <div class="project-box h-[240px] flex relative overflow-hidden border-2 border-blue-600 rounded-[2rem] group transition-transform transform-gpu">
+                <img src="{{ asset('image/foto4.png') }}" class="w-full object-cover ease-in duration-[.5s] transition-transform transform-gpu hover:scale-110" alt="">
+                <div class="project-description flex absolute justify-center items-center flex-col text-center px-3 text-white bottom-0 left-0 w-full h-full bg-gradient-to-t from-cyan-600 to-blue-500/90 ease-in duration-[.5s] transition-transform transform-gpu translate-y-full group-hover:translate-y-0">
+                    <h4 class="text-2xl font-semibold pb-2">Lorem ipsum</h4>
+                    <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="inline-flex justify-center items-center w-10 h-10 bg-white rounded-full"><i class="fa-solid fa-arrow-up-right-from-square text-yellow-600"></i></a>
+                </div>
+            </div>
+
 
         </div>
     </div>
