@@ -1,0 +1,28 @@
+
+.profile {
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+
+}
+
+.profile-img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid #C98904;
+}
+
+.span-img {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid #262626;
+    border-bottom: .2rem solid #262626;
+    border-left: .2rem solid #C98904;
+    border-right: .2rem solid #C98904;
+}
