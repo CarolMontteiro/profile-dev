@@ -1,28 +1,45 @@
-
-.profile {
-    position: relative;
-    width: 30rem;
-    height: 30rem;
-    border-radius: 50%;
-
+/*####  Borda com rotação infinita  ####*/
+.span-img-about {
+    animation: aboutSpinner 8s linear infinite;
 }
 
-.profile-img {
-    width: 90%;
-    border-radius: 50%;
-    border: .2rem solid #C98904;
+@keyframes aboutSpinner {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
 
-.span-img {
-    position: absolute;
-    top: 45%;
-    left: 45%;
-    transform: translate(-50%, -50%) rotate(0);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border-top: .2rem solid #262626;
-    border-bottom: .2rem solid #262626;
-    border-left: .2rem solid #C98904;
-    border-right: .2rem solid #C98904;
+/*####  Animação scroll  ####*/
+.animate {
+    opacity: 0;
+    filter: blur(3px);
+    transition: 1s;
 }
+
+.animate.from-left {
+    transform: translateX(-100%);
+}
+
+.animate.show {
+    transform: translate(0);
+    filter: blur(0);
+    opacity: 1;
+}
+
+/*####  Animação dos cards de habilidades  ####*/
+.cards-skill :nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.cards-skill :nth-child(3) {
+    transition-delay: 700ms;
+}
+
+/*####  Botão para voltar ao topo  ####*/
+.progress-value {
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+}
+
+
+
